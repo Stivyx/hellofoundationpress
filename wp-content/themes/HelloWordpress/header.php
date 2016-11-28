@@ -19,6 +19,11 @@
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
+	<div class="">
+		<h1>L'Agence de l'eau Rhin-Meuse présente</h1>
+		<img src="" alt="Logo les trophées de l'eau" />
+	</div>
+
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) : ?>
 	<div class="off-canvas-wrapper">
 		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>

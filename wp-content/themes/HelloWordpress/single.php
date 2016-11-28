@@ -11,6 +11,7 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 
 <div id="single-post" role="main">
+	<h1> single</h1>
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
