@@ -15,7 +15,7 @@
 		<?php the_date(); ?>
 	</div>
 	<?php if (has_post_thumbnail()): ?>
-		<div class="thumbnail">
+		<div class="thumbnail video">
 			<?php the_post_thumbnail(); ?>
 		</div>
 	<?php endif; ?>

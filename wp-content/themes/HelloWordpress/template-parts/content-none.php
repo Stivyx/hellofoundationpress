@@ -7,7 +7,6 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
-
 ?>
 
 <header class="page-header">

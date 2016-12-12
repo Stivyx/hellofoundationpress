@@ -12,17 +12,20 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
-
 get_header(); ?>
 
 <div id="page" role="main">
-	<h1>Je suis sur la home</h1>
+	<h1>Je suis sur la home....</h1>
 	<article class="main-content">
-	<?php if ( have_posts() ) : ?>
+	<?php if ( have_posts() ) :
+					$cpt = 0;
+	?>
 
 		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+		<?php while ( have_posts() ) : the_post(); $cpt++;
+					$tpl = ( ($cpt == 1) && !is_paged() ) ? 'first' : get_post_format() ;
+		 ?>
+			<?php get_template_part( 'template-parts/content',  $tpl); ?>
 		<?php endwhile; ?>
 
 		<?php else : ?>
