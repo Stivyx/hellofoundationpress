@@ -5,14 +5,12 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
-
 get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
 
 <div id="single-post" role="main">
-	<h1> single</h1>
-
+<h1>Je suis dans single....</h1>
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
@@ -28,6 +26,7 @@ get_header(); ?>
 		<footer>
 			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
 			<p><?php the_tags(); ?></p>
+			<p>///// <?php the_category(); ?></p>
 		</footer>
 		<?php the_post_navigation(); ?>
 		<?php do_action( 'foundationpress_post_before_comments' ); ?>
