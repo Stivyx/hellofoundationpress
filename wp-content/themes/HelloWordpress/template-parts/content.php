@@ -14,11 +14,7 @@
 		<?php the_category(", "); ?>
 		<?php the_date(); ?>
 	</div>
-	<?php if (has_post_thumbnail()): ?>
-		<div class="thumbnail">
-			<?php the_post_thumbnail(); ?>
-		</div>
-	<?php endif; ?>
+	<?php get_template_part('template-parts/img'); ?>
 
 	<header>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

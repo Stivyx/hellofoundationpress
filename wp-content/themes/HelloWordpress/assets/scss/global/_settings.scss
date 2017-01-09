@@ -62,7 +62,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$body-font-family: Georgia, "Times new Roman",serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -117,7 +117,7 @@ $header-sizes: (
   ),
   medium: (
     'h1': 48,
-    'h2': 40,
+    'h2': 24,
     'h3': 31,
     'h4': 25,
     'h5': 20,

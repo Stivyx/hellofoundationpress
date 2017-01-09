@@ -10,15 +10,21 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry'); ?>>
-	<div class="meta">
-		<?php the_category(", "); ?>
-		<?php the_date(); ?>
+	<div class="meta row collapse">
+		<div class="small-9 column ">
+			<?php the_category(", "); ?>
+		</div>
+		<div class="small-3 column text-right">
+			<?php the_date(); ?>
+		</div>
 	</div>
-	<?php get_template_part('template-parts/img'); ?>
-
 	<header>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	</header>
+	<?php get_template_part('template-parts/img'); ?>
+
+
+
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 		<a href="<?php the_permalink(); ?>">Lire la suite...</a>

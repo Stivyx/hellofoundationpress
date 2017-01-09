@@ -15,7 +15,6 @@
 get_header(); ?>
 
 <div id="page" role="main">
-	<h1>Je suis sur la home....</h1>
 	<article class="main-content">
 	<?php if ( have_posts() ) :
 					$cpt = 0;
