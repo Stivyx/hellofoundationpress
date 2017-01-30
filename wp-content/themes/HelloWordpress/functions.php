@@ -54,7 +54,7 @@ function monaction() {
 
 
         foreach( $gallery['src'] as $src ) : ?>
-            <img src="<?php echo $src; ?>" class="my-custom-class" alt="Gallery image" />
+            <img src="<?php echo $src; ?>" class="my-custom-class column" alt="Gallery image" />
             <?php
         endforeach;
         endif;

@@ -26,7 +26,7 @@
 
 
 	<div class="entry-content">
-		<div class="row">
+		<div class="row small-up-5">
 			<?php do_action ('my_gallery'); ?>
 		</div>
 		<?php the_excerpt(); ?>
